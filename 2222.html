@@ -1,0 +1,134 @@
+<!D0CTYPE HTML>
+<html>
+<head>
+<title>ONE INDIA</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{
+font-family:Arial,Helvetica,sanserif;
+background-image:url("bbg.png");
+}
+.imgcontainer
+{
+text-align:center;
+margin:24px 0 12px 0;
+}
+@media screen and( max-width:300px)
+{
+display:block;
+float:none;
+}
+.a{
+color:#0000cd;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+width:100%;
+}
+.b
+{
+color:#0000cd;font-size:30;
+text-decoration:underline;
+}
+.g{
+color:#0000cd;
+font-weight:bold;
+text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<div class="imgcontainer">
+<img src="1.jpg" alt="pic" class="pic">
+<center>
+<h1 class="a"> ABOUT US!</h1>
+</center>
+<p >Our bank ONE INDIA considered as on of the most promiment service provider bank is providing you service since 1922.We belive in serving our customers first.Our bank "ONE INDIA" is successfully serving our customers allover
+in INDIA.The core strengths of this bank is the brand image with rich 97 years of performance,more than 10 crore customers.,strong CASA base, consistently growing Operating Profit,low Cost of Deposits,Asset Quality and increased pace of digitalization Our main mission and vision is to satisfy the following.</p>
+<p class="b">MISSION</p>
+<p>"Creating value for all its Customers,Investors and Employees for being the first choice for all stakeholders"</p>
+<p class="b">VISION</p>
+<p >"To position One India Bank as the "MOST PREFERRED BANK" for customers,the "Best Place to Work In" for employees and "Benchmark Of Excellence" for the industry.</p><br><p> This is all about us and to know more and get our services, you can visit to our branch nearby you</p>
+<p>YOUR INFO</p>
+<p id="demo"></p>
+<center>
+
+<label for="bname">
+<b class="g">Branch Name </b></label>
+<br>
+<select id="asd" onchange="fun()" name="Branch" placeholder="Select your branch">
+<option value="1">Select Your Branch</option>
+<option value="2">Mumbai </option>
+<option value="3">Chennai</option>
+<option value="4">Delhi</option>
+<option value="5">Punjab</option>
+<option value="6">Goa</option>
+<option value="7">Uttar Pradesh</option>
+<option value="8">Kashmir</option>
+<option value="9">Himachal Pradesh</option>
+<option value="10">Uttrakhand</option>
+
+
+</center>
+</div>
+<script>
+function fun()
+{
+a=document.getElementById("asd").value;
+if(a==2)
+{
+b="madan road mob:55455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==3)
+{
+b="DIG road mob:75455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==4)
+{
+b="gagan road mob:65455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==5)
+{
+b="veer shahid road mob:35455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==6)
+{
+b="marin road mob:95455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==7)
+{
+b="madan road mob:55455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==8)
+{
+b="veer shahid road mob:35455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==9)
+{
+b="DIG road mob:75455"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==10)
+{
+b="hjk road mob:15455"
+document.getElementById("demo").innerHTML=b;
+}
+else
+{
+b="INVALID INPUT"
+document.getElementById("demo").innerHTML=b;
+}
+}
+
+
+
+</script>
+</body>
+</html>

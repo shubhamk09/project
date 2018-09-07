@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head><title>LOGIN | ONE INDIA BANK</title>
+<style>
+
+.grid-container
+{
+display:grid;
+grid-gap:5px;
+grid-template-areas:
+'div1 div1 div1 div1 div6 div6'
+'div2 div2 div3 div3 div3 div3'
+'div2 div2 div3 div3 div3 div3';
+background-image:url("lr.png");
+
+}
+
+.item1{grid-area:div1;}
+.item2{grid-area:div2;}
+.item3{grid-area:div3;}
+.item6{grid-area:div6;}
+
+.grid-container>div
+{
+
+font-family:cursive;
+text-align:center;
+padding:90px;
+}
+table
+{
+background-image:url("tbg.jpg");
+font-family:cursive;
+border-radius:30px;
+}
+
+</style>
+</head>
+
+<body onload="disp()">
+<div class="grid-container">
+
+<div class="item1">
+<div style="border-radius:35px;margin-top:10%;color:#FF8784;font-size:60px;font-family:times new roman;font-weight:bold;width:70%;">
+LOGIN</div></div>
+<div class="item6">
+<center>
+<img src="oi.png">
+</center>
+</div>
+<div class="item2">
+<form onsubmit="sub()">
+<table align="center"cellpadding="10">
+    <tr>
+    <td>Username:</td>
+    <td><input type="text" name="uid" placeholder="User name" id="a" onfocus=mf() onblur=mf2()></td>
+	</tr>
+	<tr>
+	<td>Password:</td>
+	<td><input type="password" name="pswd" placeholder="Password" id="b" onfocus=mf3() onblur=mf4()></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><a href="landing page.html"><input type="button" font="cursive" name="LOGIN" value="LOGIN"></a></td>
+</table>
+</form>
+</div>
+<div class="item3">
+<p>NEVER respond to any popup,email,SMS or phone call,
+ no matter how appealing or official looking, 
+ seeking your personal information such as username,
+ password(s), mobile number,
+ ATM Card details, etc. Such communications are
+ sent or created by fraudsters to trick you
+ into parting with your credentials.</p>
+</div>
+</div>
+<script>
+function disp()
+{
+	alert("You are directed to login page")
+}
+function sub()
+{
+	alert("You are logging in")
+}
+
+function mf()
+{
+	document.getElementById("a").style.background="#FF8784";
+}
+function mf2()
+{
+	document.getElementById("a").style.background="white"
+}
+function mf3()
+{
+	document.getElementById("b").style.background="#FF8784"
+}
+function mf4()
+{
+	document.getElementById("b").style.background="white"
+}
+</script>
+</body>
+</html>

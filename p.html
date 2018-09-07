@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1
+{
+grid-area:head;
+background-image:url(bg.jpg);
+bakground-repeat:no-repeat;
+background-size:100%;
+}
+.item2
+{
+grid-area:left;
+padding:20px;
+}
+.item3
+{
+grid-area:main;
+padding:20px;
+}
+.item4
+{
+grid-area:right;
+padding:20px;
+}
+.item5
+{
+grid-area:footer;
+padding:90px;
+background-color:lightblack;
+}
+#image
+{
+border-radius:50%;
+}
+.grid-container
+{
+display:grid;
+grid-template-areas;
+'head head head head head head'
+'left left main main right right'
+'footer footer footer footer footer footer'
+}
+.grid-container>div{
+color:white;
+font-family:cursive;
+text-align:center;
+}
+#a
+{
+color:#761804;
+width:75%;
+padding:20px;
+background-color:lightgray;
+}
+body
+{
+background-image:url("3.png");
+background-size:cover;
+background-attachment:fixed;
+}
+p
+{font-style:italic;
+font-weight:bold;
+font-size:20px;
+color:#761804;
+}
+a
+{
+color:white;
+font-size:30px;
+text-decoration:none;
+padding-left:90px;
+floar:center;
+}
+table
+{
+width:50%;
+}
+table,th,td
+{
+border:1px solid grey;
+border-collapse:collapse;
+}
+td
+{
+padding:25px;
+color:black;
+font-size:20px;
+text-align:center;
+}
+th
+{
+padding:25px;
+color:#11AA00;
+font-size:20px;
+}
+tr:nth-child(odd)
+{
+background-color:#FF8784;
+}
+
+</style>
+</head>
+<body class="item1">
+<script>
+alert("you are directed to payment and transfer page")
+</script>
+<center><img src="logo.jpeg" height="100px" width="160px"></center>
+<div class="grid-container>
+<div class="item1">
+<div style="background-color:rgba(0,0,0,0.5);margin-top:30px;padding-bottom:15px;">
+<a href="AS2.html"target="_blank">Account summary</a>
+<a href="landing page.html"target="_blank">landing page</a>
+<a href="Credit.html"target="_blank">About us</a>
+<a href="login.html"target="_blank">logout</a>
+</div>
+<br><br>
+<div style="color:Black;font-size:20px;">Note:<span style="color:red;font-size:20px;"><marquee>OneIndia never ask for bank information on call.In case you recieve any call asking bank information please ignore and report to us immediately</marquee></span></div>
+<center>
+<div style="border-radius:35px;margin-top:3%;font-size:40px;color:black;background:lightgray;width:50%;">
+Payment and transfer</div><br><br>
+</center>
+</div>
+<div class="item4"><center><p style="color:black;font-family:times new roman">Detail of last 5 transaction</p>
+<table cellpadding="5" cellspacing="5">
+<th>
+<td>DATE:</td>
+<td>MODE</td>
+<td>AMOUNT</td>
+</th>
+<tr>
+<td>1</td>
+<td>24-4-18</td>
+<td>dedit</td>
+<td>Rs.2400</td>
+</tr>
+<tr>
+<td>2</td>
+<td>20-4-18</td>
+<td>credit</td>
+<td>Rs.3000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14-4-18</td>
+<td>debit</td>
+<td>Rs.2400</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24-4-18</td>
+<td>credit</td>
+<td>Rs.2400</td>
+</tr>
+<tr>
+<td>5</td>
+<td>24-41-18</td>
+<td>credit</td>
+<td>Rs.2400</td>
+</tr>
+</table>
+<center><br><div style="font-size:40px;color:darkblue;"> Transfer money</div><br><br>
+
+    
+    <div style="color:darkslategray;font-size:20px;background-color:floralwhite;">
+            <html>
+                    
+                    
+                    <form action="next.asp" name="myForm" onsubmit="return(validate())"method="post">
+                    
+                  <br>ACCOUNT NO:<input type="text" name="Name" id="1">
+                    <br><br><br>
+                    AMOUNT:<input type="text" name="EMail" id="2">
+                    <br><br><br>
+                    
+                    IFSC code:<input type="text" name="contact" id="3">
+                    <br><br><br>
+                    
+
+                    
+                    ACCOUNT NO:
+                    <select name="Country" id="7">
+                    <option value="-1">Select your ACCOUNT</option>
+                    <option value="1">000000056952</option>
+                    <option value="2">000584515154</option>
+                    <option value="3">000055448548</option>
+                    </select>
+                    <br><br><br>
+                    
+                    <input type="submit"value="Submit">
+                    </form>
+                    <script>
+                    function validate()
+                    {
+                    if(document.getElementById("1").value=="")
+                    {
+                    alert("Please provide your ACCOUNT NO!");
+                    document.getElementById("1").focus();
+                    return false;
+                    }
+                    x=document.getElementById("2").value
+                    atpos=x.indexOf("@");
+                    dotpos=x.indexOf(".");
+                    dotposLast=x.lastIndexOf(".");
+                    if(x==""||atpos<1||dotpos<=atpos+2||dotposLast+2>=x.length)
+                    {
+                    alert("please provide correct AMOUNT !")
+                    document.getElementById("2").focus();
+                    return false;
+                    }
+                    a=document.getElementById("3").value
+                    if(a==""||a.length!=10||isNaN(a))
+                    {
+                    alert("please provide valid IFSC code");
+                    document.getElementById("3").focus();
+                    return false;
+                    }
+                    
+                    
+                   
+                   
+                    if(document.getElementById("7").value=="-1")
+                    {
+                    alert("please select your account");
+                    return false;
+                    }
+                    return(true);}
+                    </script></body></html>
+    </div>
+    
+</pre>                      
+</center></div>
+
+<center>
+<div class="item3">
+<div id="a"><p>Best bank in India!</p><br>
+<img id="image"src="bank image.jpg"width="200px"height="200px"><br>
+We offers you the best banking services in all over india
+</div></center></div>
+<div class="item4">
+<center>
+<div id="a"><p>Completerly safe and secure!</p><br>
+<img id="image"src="secure.jpg"width="200px"height="200px"><br>
+We take full responsibility of safety of your money
+</div></center></div>
+<div class="item5"><center>
+<div style="color:#761804;">856.816               <br><br>
+We are working hard through friday,straight bright andearly with a cup of lightly
+We prefer email but feel free to give us ring for good measuure</div><br><br>
+follow us at<br><br>
+<img src="fb.jpg" width="30px"height="30px">
+<img src="insta.jpg" width="30px"height="30px">
+<img src="twitter.png" width="30px"height="30px">
+<img src="g.png" width="30px"height="30px">
+
+</center></div></div></body></html>

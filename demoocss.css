@@ -1,0 +1,24 @@
+h1{
+    color: bisque;
+    font-size: 50px;
+    font-family:Barrio;
+}
+
+.norway{
+    border: 5px solid #429bf4;
+    
+}
+.norway:hover{
+    border: 5px solid red;
+    
+}
+#divi{
+    background-color: grey;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: papyrus;
+    border-radius: 10px;
+    color:aqua;
+}

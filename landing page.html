@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head><title>ONE INDIA BANK</title>
+<style>
+.item2{
+font-size:30px;
+padding-bottom:100px;
+}
+
+.grid-container
+{
+display:grid;
+grid-gap:5px;
+grid-template-areas:
+'div1 div2 div2 div2 div2 div2'
+'div3 div4 div4 div4 div4 div5'
+'div3 div4 div4 div4 div4 div6'
+}
+
+.item1{grid-area:div1;}
+.item2{grid-area:div2;}
+.item3{grid-area:div3;}
+.item4{grid-area:div4;}
+.item5{grid-area:div5;}
+.item6{grid-area:div6;}
+
+.grid-container>div
+{
+
+color:white;
+font-family:cursive;
+text-align:center;
+padding:90px;
+}
+body{
+background-image:url("bbg.png");
+background-size:cover;
+background-attachment:fixed;}
+#image
+{
+border-radius:50%;
+height:70px;
+width:70px;
+}
+table
+{
+width:100%;
+}
+table,th,td
+{
+border:1px solid grey;
+border-collapse:collapse;
+}
+td
+{
+padding:25px;
+color:black;
+font-size:20px;
+text-align:center;
+}
+th
+{
+padding:25px;
+color:#11AA00;
+font-size:20px;
+}
+tr:nth-child(odd)
+{
+background-color:#FF8784;
+}
+#hh{
+color:white;
+font-size:30px;
+font-family:times new roman;
+text-decoration:none;
+padding-left:20px;
+float:center;
+}
+#hg{
+color:white;
+font-family:times new roman;
+text-decoration:none;
+float:center;
+}
+#hg:hover
+{
+color:#761804;
+}
+#hh:hover
+{
+color:#761804;
+}
+
+</style>
+</head>
+
+<body>
+<div class="grid-container">
+
+<div class="item1" style="background-color:rgba(0,0,0,0.5);color:white;margin-top:30px;padding-bottom:15px;"><image id="image" src="demo.png" width="200px"height="200px"><br>
+<p>BHARAT SHARMA</p></div>
+<div class="item2">
+<img id="2" src="oi.png" height:>
+<div style="background-color:rgba(0,0,0,0.5);color:red;margin-top:30px;padding-bottom:15px;">
+<a id="hh" href="about bank.html" target="_blank">ABOUT BANK</a>
+&nbsp;
+&nbsp;
+<a id="hh" href="about bank.html" target="_blank">BRANCH INFO</a>
+&nbsp;
+&nbsp;
+<a id="hh" href="login.html" target="_blank">LOGOUT</a>
+</div>
+</div>
+<div class="item3" style="background-color:rgba(0,0,0,0.5);color:yellow;margin-top:30px;padding-bottom:15px;">
+<center><p style="color:white;font-family:times new roman">Account balance</p>
+<div style="background-color:rgba(0,0,0,0.5);padding:20px" >Rs.45000</div>
+<p><a id="hg" href="p.html">Payment & Transfer</a><p/>
+<p><a id="hg" href="credit.html">Credit & Debit info.</a></p>
+<p><a id="hg" href="AS2.html">Account summary</a></p></center></div>
+<div class="item4"><center><p style="color:black;font-family:times new roman">Detail of last 5 transaction</p>
+<table cellpadding="5" cellspacing="5">
+<th>
+<td>DATE:</td>
+<td>MODE:</td>
+<td>AMOUNT:</td>
+</th>
+<tr>
+<td>1</td>
+<td>24-4-18</td>
+<td>debit</td>
+<td>Rs.2400</td>
+</tr>
+<tr>
+<td>2</td>
+<td>20-4-18</td>
+<td>credit</td>
+<td>Rs.3000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>14-4-18</td>
+<td>debit</td>
+<td>Rs.2400</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24-4-18</td>
+<td>credit</td>
+<td>Rs.2400</td>
+</tr>
+<tr>
+<td>5</td>
+<td>24-41-18</td>
+<td>credit</td>
+<td>Rs.2400</td>
+</tr>
+</table>
+</center></div>
+<div class="item5" style="color:black;font-family:times new roman;"><center><p>PLEASE LOGOUT PROPERLY AFTER YOUR WORK IS DONE</p>
+<p id="demo"></p>
+<form>
+<p>You can check yor cedit and debit amount of the month</p>
+<select id="asd" onchange="fun()" name="MODE" placeholder="Select Mode">
+<option value="1">Select mode</option>
+<option value="2">Credit </option>
+<option value="3">Debit </option>
+</select>
+</form>
+</center></div>
+<div class="item6" style="color:black;font-family:times new roman;"><image id="image" src="demo.png" width="200px"height="200px"><br>
+<center><p>Get loan in minutes</p>
+<p><abbr title="Click here to get contact information of your branch"><a id="hg" href="about bank.html" target="_blank">Contact your branch</a></abbr></p></center></div>
+</div>
+
+<script>
+function fun()
+{
+a=document.getElementById("asd").value;
+if(a==2)
+{
+b="4500"
+document.getElementById("demo").innerHTML=b;
+}
+else if(a==3)
+{
+b="2000"
+document.getElementById("demo").innerHTML=b;
+}
+else
+{
+b="INVALID INPUT"
+document.getElementById("demo").innerHTML=b;
+}
+}
+</script>
+</body>
+</html>

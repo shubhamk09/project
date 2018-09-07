@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head><title>WELCOME TO ONE INDIA BANK</title>
+<style>
+.item1{grid-area:head;
+font-size:50px;
+padding-bottom:200px;
+background-image:url(2.jpg);
+background-repeat:no-repeat;
+background-size:100%;}
+
+.item2{grid-area:left;padding:20px;}
+.item3{grid-area:main;padding:20px;}
+.item4{grid-area:right;padding:20px;}
+.item5{grid-area:footer;padding:90px;background-color:white;}
+
+#image
+{
+border-radius:50%;
+}
+.grid-container{
+display:grid;
+grid-template-areas:
+'head head head head head head'
+'left left main main right right'
+'footer footer footer footer footer footer';
+}
+.grid-container>div{
+color:white;
+font-family:cursive;
+text-align:center;
+}
+#a
+{
+color:#761804;
+width:75%;
+padding:20px;
+background-color:white;
+}
+body{
+background-image:url("bbg.png");
+background-size:cover;
+background-attachment:fixed;}
+p{
+font-style:italic;
+font-weight:bold;
+font-size:20px;
+color:#761804;}
+a{
+color:white;
+font-size:30px;
+text-decoration:none;
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:#761804;
+}
+</style>
+<script>
+function fun()
+{
+	alert("WELCOME")
+}
+</script>
+</head>
+<body onload="fun()">
+<div class="grid-container">
+
+<div class="item1">
+<div style="background-color:rgba(0,0,0,0.5);margin-top:30px;padding-bottom:15px;">
+<a href="login.html">LOGIN</a>
+<a href="signup.html">SIGN UP</a>
+</div>
+<center>
+<div style="background-color:rgba(0,0,0,0.5);border-radius:35px;margin-top:10%;color:#FF8784;font-size:60px;font-family:times new roman;font-weight:bold;width:70%;">
+WELCOME TO <br>ONE INDIA ONLINE BANKING</div>
+</center>
+</div>
+<div class="item2">
+<center>
+<div id="a"><p>Don't share your Details </p><br>
+<image id="image" src="thief.jpg" width="200px"height="200px"><br>
+Your user name and password and other details should be secrete and must not be shared with any other person.
+</div></center></div>
+
+<div class="item3">
+<center>
+<div id="a"><p>Do not use Public Computers</p><br>
+<image id="image" src="pc.jpg" width="200px"height="200px"><br>
+These are the crowded place and more chances of your password being traced and seen by other.
+</div></center></div>
+
+<div class="item4">
+<center>
+<div id="a"><p>Change Password regularly</p><br>
+<image id="image" src="sd.jpg" width="200px"height="200px"><br>
+Change your password in regular interval in order to keep your account safe and confidential.
+</div></center></div>
+
+<div class="item5">
+<center>
+<div style="background-color:#FF8784;width:40%;font-size:30px;border-radius:30px">
+emial_us@oneindiabank.com</div><br>
+<div style="background-color:white;">
+<center>
+<img src="oi.png">
+</center>
+</div>
+<div style="background-color:#FF8784;width:40%;font-size:30px;border-radius:30px"><br>
+Please watch our daily updates on Instagram, facebook and subscribe on youtube.
+</div><br><br>
+<img src="insta.png" width="30px" height="30px" >
+<img src="fb.png" width="30px" height="30px" >
+<img src="t.png" width="30px" height="30px" >
+<img src="yt.png" width="30px" height="30px" >
+<img src="L.png" width="30px" height="30px" >
+<img src="G.png" width="30px" height="30px" >
+</center>
+    </div>
+    </div>
+    </body>
+    </html>
+
